@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    height: 109vh;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.password-container{
+    background-color: pink;
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.input-container{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+.input::placeholder{
+    letter-spacing: 0px;
+
+}
+
+.fa-copy{
+    cursor: pointer;
+    opacity: 0.3;
+
+}
+
+.fa-copy:hover{
+    opacity: 0.8;
+
+}
+
+.btn{
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: green;
+
+}

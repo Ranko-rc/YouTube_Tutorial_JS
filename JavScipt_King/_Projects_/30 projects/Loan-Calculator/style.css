@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.container{
+    background-color: rgb(24, 148, 168);
+    color: rgba(242, 238, 238, 0.7);
+    width: 100%auto;
+    height: 330px;
+    padding: 1%;
+    border-radius: 20px;   
+}
+
+h1{
+    margin-bottom: 30px;
+    margin-top: 1%;
+} 
+
+.input{
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    margin-top:5px;
+}
+
+.payment{
+    font-weight: 600;
+    font-size: 24px ;
+}
+
+/*Color value*/
+#loan-amount { color: blue; }
+#interest-rate{ color: blue; }
+#mounth-to-pay{ color: blue; }
+#payment{ color: red; }

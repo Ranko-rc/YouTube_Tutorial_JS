@@ -1,0 +1,80 @@
+body{
+    margin: 0   ;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    padding: px;
+    width: 300px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, .1 ),
+            -6px -6px 8px rgba(255, 255, 255, .6 );
+    margin: 10px;
+    position: relative;
+    transition: width 1.2s;
+    
+}
+
+.lupa{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+.mic{
+    width: 25px;
+    position: absolute;
+    right: 10px; 
+     transition: width 0.5s;
+     transition-delay: 0.3, sopacity 0.3s ease;
+}
+
+
+
+.input {
+    width: 180px; /* nebo 200px */
+    margin: 10px 45px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(100, 100, 100);
+    transition: width 0.5s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.active .input {
+    width: 0;
+    opacity: 0;
+}
+
+.active.search-bar-container{
+    width: 0px;
+}
+
+
+
+.active .input{
+   /* display: none; */
+    width: 0px;
+}
+
+/*
+.active .lupa{
+    width: 0px;
+}
+*/
+
+.active .mic{
+    /*display: none;*/
+    width: 0px; 
+};
+
