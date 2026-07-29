@@ -11,7 +11,7 @@ copyIconEl.addEventListener("click", () => {
     if (!inputEl.value) return
 
     copyPassword()
-        (() => {
+        .then(() => {
             alertContainerEl.classList.remove("active")
             setTimeout(() => {
                 alertContainerEl.classList.add("active")
