@@ -6,7 +6,7 @@ let characterIndex = 0;
 
 function updateText() {
     const currentText = careers[careerIndex].slice(0, characterIndex);
-    containerEL.innerHTML = `<h1> I am ${currentText} ... </h1>`;
+    containerEL.innerHTML = `<h1> I"am ${currentText} ... </h1>`;
 
     if (characterIndex < careers[careerIndex].length) {
         characterIndex++;
