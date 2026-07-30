@@ -59,12 +59,10 @@ button:hover{
 .operator{
     background-color: rgb(117, 117, 239);    
     color: #fff;
-
 }
 
 .equals{
     background-color: chartreuse;
     grid-row: span 3;
     color: #fff;
-
 }
