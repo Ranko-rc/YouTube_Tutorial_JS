@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background: url("/img/ralf1403-daisy-8772631.jpg");
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    background-image:  linear-gradient(45deg, rgb(71, 71, 143), rgb(206, 84, 84) , transparent 90%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+form input[type="text"] {
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    border-radius: 10px;
+    background-color:  rgba(0, 0, 0, .3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    color: rgba(255, 255, 255, 0.582);
+}
+
+form input[type="submit"] {
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(23, 247, 235, 0.4),  rgba(27, 230, 213, 0.4));
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+    font-size: 15px;
+    margin-left: 35px;   
+    outline: none;
+    border: none;
+    transition: .2s ease;
+    
+}
+
+form input[type="submit"]:hover {
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(27, 230, 213, 0.622),
+        rgba(23, 247, 235, 0.622)
+    );
+    color: rgb(13, 78, 13);
+    padding: 16px;
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .7);}
+
+h1{
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px pink;
+    font-size: 46px;
+}
+
+i{
+    color: rgb(230, 172, 85);;
+    font-weight: 800;
+       font-size: 64px;
+       margin-bottom: 25px;
+}
+
+.temperature{ 
+    font-size: 45px;
+    font-weight: 600;
+    margin: 20px 0 ;
+}
+
+.description{
+    font-size: 48px;
+    margin: 15px 0;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+}
+
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+.detail > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(10, 233, 159, 0.212);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .4);
+    margin: 15px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 45px;
+}
+
+@media (max-width: 768px){
+    form{
+        flex-direction: column;
+    }
+
+    form input[type="text"]{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}
+
