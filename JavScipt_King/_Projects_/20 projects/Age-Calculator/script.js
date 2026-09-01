@@ -8,7 +8,7 @@ function calculateAge() {
     alert("Please enter your birthday");
   } else {
     const age = getAge(birthdayValue);
-    resultEl.innerText = `Tvůj věk je:  ${age} ${age > 1 ? "let" : "roků"} stár`;
+    resultEl.innerText = `Tvůj věk je:  ${age} ${age > 1 ? "let" : "roků"}`;
   }
 }
 

@@ -8,14 +8,16 @@ body{
 
 .container{
     position: relative;
-    background-image:  linear-gradient(45deg, rgb(71, 71, 143), rgb(206, 84, 84) , transparent 90%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    background-image:  linear-gradient(45deg, rgba(71, 71, 143, .8 ), rgba(206, 84, 84, .8 ) , transparent 90%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
     max-width: 600px;
     border-radius: 15px;
     padding: 20px;
+/* -webkit-backdrop-filter: blur(8px); //starsi prohlizece a IOS  */
+    backdrop-filter: blur(10px);
 }
 
 form{
@@ -71,8 +73,13 @@ h1{
 i{
     color: rgb(230, 172, 85);;
     font-weight: 800;
-       font-size: 64px;
-       margin-bottom: 25px;
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+.bx-lg{
+    font-size: 64px;
+    margin-bottom: 25px;
 }
 
 .temperature{ 
