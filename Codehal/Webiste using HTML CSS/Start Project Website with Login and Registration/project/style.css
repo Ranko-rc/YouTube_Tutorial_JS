@@ -131,6 +131,7 @@ header{
 
 .content .logo{
     font-size: 30px;
+    color: cadetblue;
 }
 
 .text-sci h2{
@@ -145,13 +146,14 @@ header{
 .social-icons a i {
     font-size: 22px;
     margin: 19px 10px;
-    color: azure;
+    color: rgba(93, 176, 235, 0.532);
     transition: .5s ease;
 
 }
 
 .social-icons a:hover i {
     transform: scale(1.2);
+    color: rgba(227, 227, 60, 0.503)
 
 }
 

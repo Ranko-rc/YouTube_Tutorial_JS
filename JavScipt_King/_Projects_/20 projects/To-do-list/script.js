@@ -4,6 +4,8 @@ const inputEl = document.querySelector(".input");
 
 const ulEl = document.querySelector(".list");
 
+
+
 let list = JSON.parse(localStorage.getItem("list"));
 if (list) {
   list.forEach((task) => {
@@ -33,6 +35,7 @@ function toDoList(task) {
   checkBtnEl.innerHTML = `
   <i class="fas fa-check-square">
   `;
+  
   liEl.appendChild(checkBtnEl);
   const trashBtnEl = document.createElement("div");
   trashBtnEl.innerHTML = `
