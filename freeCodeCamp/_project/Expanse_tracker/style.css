@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #4ace4e, #38b6cf);
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff58;
+    backdrop-filter: blur(10px);
+    padding: 35px;
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+h1{
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7em;
+    text-decoration: darkolivegreen;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c25a5a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 4px 8px rgba(157, 28, 28, 0.4);
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #38b6cf;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.balance-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #b5b133, #93373a);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5); 
+}
+
+#balance {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #4ace4e;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-shadow: 2px 3px 6  px rgba(0, 0, 0, 0.3);
+}
+
+.summary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.summary-title {
+    text-align: center;
+    color: #46a465;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.income,
+.expenses {
+    flex: 1;
+    text-align: center;
+    padding: 18px 14px;
+    border-radius: 12px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.income {
+    background-color: #8ccf8e;
+}
+
+.expenses {
+    background-color: #ec7c7b;
+}
+
+.income h3,
+.expenses h3,
+.income p,
+.expenses p {
+    margin: 0;
+}
+
+.income h3,
+.expenses h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.income p,
+.expenses p {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+#transaction-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+}
+
+#transaction-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0;
+    margin: 0 2px;
+    background: transparent;
+    border-left: 3px solid #ab3e3e;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#transaction-list li span:first-child {
+    flex: 1;
+    word-break: break-word;
+    text-align: left;
+}
+
+#transaction-list li span:nth-child(2) {
+    min-width: 120px;
+    text-align: right;
+    font-weight: 700;
+}
+
+#transaction-list li button {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 15px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 8px;
+    background: #db3838;
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+#transaction-list li button:hover {
+    background: #902424;
+    transform: translateY(-2px);
+    transform: scale(.95);
+}
+
+.transaction-container {
+    background: rgba(120, 195, 174, 0.75);
+    padding: 20px 0 10px;
+    border-radius: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+span {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.transaction-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #c85757;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 0 rgba(0,0,0,0.15);
+    font-weight: 900;
+}
+
+.form-container {
+    margin-top: 30px;
+    background-color: #ece7e738;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.transaction-form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.transaction-title {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    color: #ac3636d2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button onclick {
+    cursor: pointer;
+    
+    margin: 10px ;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    max-width: 100%;
+    background-color: #ebe6e621;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3); 
+}
+
+input:focus {
+    border-color: #4ace4e;
+    box-shadow: 0 0 5px rgba(74, 206, 78, 0.5);
+}
+
+small {
+    font-size: 0.6em;
+    color: #666;
+}
+
+button {
+    position: relative;
+    left: 25%;
+    padding: 10px 15px;
+    margin-top: 15px    ;
+    background-color: #4ace4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5); 
+}
+
+button:hover {
+    background-color: #38b6cf;
+    align-items: center;
+    transform: scale(.95) translateY(-3px);
+}
+

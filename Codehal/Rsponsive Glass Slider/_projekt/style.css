@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+section{
+    min-height: 100vh;
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animateBg 5s infinite;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    transition: width 0.5s;
+}
+
+.sidebar.active{
+    width: 250px;
+}
+
+.sidebar #btn{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: block;
+    margin: 10px ;
+    margin-left: 55px;
+    font-size: 30px;
+    color: #edece995;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar.active #btn{
+    left: 150px;
+}
+
+.sidebar ul li input{
+    width: 100%;
+    height: 35px;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 16px;
+}
+
+.sidebar.active ul li input{   
+    padding: 0 20px 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.sidebar ul li .bx-search{
+    position: static;
+    color: #24e0ae;
+    font-size: 18px;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar .logo-content .logo{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.sidebar.active .logo-content .logo{
+   opacity: 1;
+}
+
+.logo-content .logo h3{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.logo-content .logo i{
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* #btn{
+    display: block;
+    margin: 10px 35px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+} */
+
+#btn:hover{
+    color: rgba(255, 255, 0, 0.522);
+    transition: color 0.3s;
+    cursor: pointer;
+}   
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+    margin-left: 20px;
+}
+
+.list .search{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.list .search a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    gap: 10px;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+.list .search input{
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.list .search i{
+    color: #a9d3d6;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.list .search i:hover{
+    color: #ff0;
+}
+
+.list .search input,
+.list .search button{
+    margin: 0;
+}
+
+.list .search button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #a76969;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list .search button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.list-item i{
+    margin-right: 0;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px 0;
+}
+
+ul li{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar ul li a{
+    color: #FFF;
+    text-decoration: none;
+    transition:  0.3s ease;
+}
+
+.sidebar ul .list-item a,
+.sidebar ul .list-logout a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    gap: 5px;
+    padding-left: 5px   ;
+    border-radius: 6px;
+    
+
+}
+
+.sidebar ul .list-item.active a{
+    background-color: rgba(48, 56, 205, 0.906);
+  
+}
+
+
+
+.sidebar ul li:not(.search):not(.active) a:hover{
+    background-color: rgba(230, 229, 218, 0.2);
+}
+
+
+
+.list-logout{
+    margin-top: auto;
+}
+
+.list-logout i{
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.sidebar .links-name{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+   
+}
+
+.sidebar.active .links-name{
+    transition-delay: 0.3s;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.sidebar .list-logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    width: 70%
+}
+
+.sidebar.active .list-logout{
+    transition-delay: 0.3s;
+    pointer-events: auto;
+    opacity: 1;
+    width: 90%;
+}
+
