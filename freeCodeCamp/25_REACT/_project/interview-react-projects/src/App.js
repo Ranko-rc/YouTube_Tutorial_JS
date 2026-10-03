@@ -17,8 +17,10 @@
 
   import TreeView from './commponents/tree-view';
 
+  // import QRCodeGenerator from './commponents/qr-code-generator';
 
 function App() {
+
   return (
     <div className="App">
      {/* Accordion Component */}
@@ -38,6 +40,9 @@ function App() {
 
     {/* tree view component */}
     <TreeView />
+
+    {/* QR Code Generator Component */}
+    {/* <QRCodeGenerator /> */}
     </div>
    
   );
