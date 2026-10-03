@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nadpis {
+  margin-bottom:40px;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(228, 195, 195, 0.3);
+  color: #6ab416;
+  font-weight: bold;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.star-rating svg {
+    font-size: 6rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
