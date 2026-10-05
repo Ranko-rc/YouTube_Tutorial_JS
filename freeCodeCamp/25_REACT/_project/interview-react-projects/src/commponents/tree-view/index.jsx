@@ -1,11 +1,14 @@
 import "./styles.css"
+import MenuList from './menu-list';
 
 
 
-export default function TreeView() {
+export default function TreeView({ menus = [] }) {
     return (
-        <div>
-            <h1>Tree View Component</h1>
+        <div className="tree-view-container">
+            {/* <h1>Tree View Component</h1> */}
+
+            <MenuList list={menus} />
         </div>
     );
 }

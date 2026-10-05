@@ -16,6 +16,7 @@
   // import LoadMoreData from './commponents/load-more-data';
 
   import TreeView from './commponents/tree-view';
+  import { menus } from './commponents/tree-view/data';
 
   // import QRCodeGenerator from './commponents/qr-code-generator';
 
@@ -39,7 +40,7 @@ function App() {
      {/* <LoadMoreData /> */}
 
     {/* tree view component */}
-    <TreeView />
+    <TreeView menus={menus} />
 
     {/* QR Code Generator Component */}
     {/* <QRCodeGenerator /> */}
