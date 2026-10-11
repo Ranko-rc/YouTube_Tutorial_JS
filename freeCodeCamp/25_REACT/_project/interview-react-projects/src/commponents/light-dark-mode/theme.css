@@ -1,0 +1,21 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000000;
+  --button-bg: #000000;
+  --button-text: #ffffff;
+}
+
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-primary: #fff;
+  --button-bg: #fff;
+  --button-text: #000;
+}
+
+
+
+/* [data-theme="light"] {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+} */

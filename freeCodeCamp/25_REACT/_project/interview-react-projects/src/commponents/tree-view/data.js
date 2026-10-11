@@ -18,6 +18,35 @@ export const menus = [
               {
                 label: "City",
                 to: "city",
+                children: [
+                  {
+                    label: "Prague",
+                    to: "prague",
+                    children: 
+                    [
+                      {
+                        label: "Some Street",
+                        to: "some-street"   
+                      },
+                      {
+                        label: "Next Street",
+                        to: "next street"
+                      }
+                    ]
+                  },
+                  {
+                    label: "Lysá nad Labem",
+                    to: "lysá-nad-labem",
+                  },
+                  { 
+                    label: "Mělník",
+                    to: "melnik",
+                  },
+                  {
+                    label: "Kladno",
+                    to: "kladno",
+                  }
+                ]   
               },
             ],
           },
