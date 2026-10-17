@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carusel {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow:  0 0 23px rgba(218, 120, 75, 0.5);
+
+}
+
+.image-container {
+    display: flex;  
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+
+img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+

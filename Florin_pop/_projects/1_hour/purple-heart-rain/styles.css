@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}

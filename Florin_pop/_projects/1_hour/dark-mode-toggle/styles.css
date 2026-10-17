@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 30px;
+
+}
+input[type="checkbox"] {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+label {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    transition: color 0.3s, text-shadow 0.3s;
+    
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: rgb(253, 253, 252);
+}
+
+body.dark-mode label {
+    color: rgb(100, 199, 19);
+    border-color: rgb(209, 206, 32);
+    background-color: rgb(177, 42, 177);
+}   
+
+h1 {
+    margin-bottom: 20px;
+}
+
+span {
+    margin-bottom: 20px;
+    color: violet;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue
+}
+
+#btn {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgb(204, 17, 17);
+    color: yellow;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid rgb(169, 204, 14);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}           
+
+
+#btn:focus {
+    outline: none;
+}
+
+#btn:active {
+    transform: scale(0.95); 
+    box-shadow: none;
+}
