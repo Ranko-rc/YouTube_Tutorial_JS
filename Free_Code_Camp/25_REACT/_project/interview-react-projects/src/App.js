@@ -51,7 +51,11 @@
 // import Test from './commponents/use-fetch/test';
 // import './commponents/use-fetch/index.jsx';
 
-import UseOnclickOutsideTest from './commponents/use-outside-click/test';
+// import UseOnclickOutsideTest from './commponents/use-outside-click/test';
+
+
+import UseWindowResizeTest from './commponents/use-windows-resize/test';
+
 
 function App() {
 
@@ -113,7 +117,10 @@ function App() {
 
 
             {/* Use Outside Click Hook Component */}
-            <UseOnclickOutsideTest />
+            {/* <UseOnclickOutsideTest /> */}
+
+            {/* Use Windows Resize Hook Component */}
+            <UseWindowResizeTest />
 
 
 
