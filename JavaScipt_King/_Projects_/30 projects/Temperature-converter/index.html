@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Idle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="heading">Temperature convertor</h1>
+        
+        <div class="temp-container">    
+            <label for="celsius">Celsius : </label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="celsius"
+            placeholder="Enter value"
+            class="input"
+            id="celsius">
+        </div>
+    
+        <div class="temp-container">    
+            <label for="fahrenheit">Fahrenheit :</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="fahrenheit"
+            placeholder="Enter value"
+            class="input"
+            id="fahrenheit">
+        </div>
+
+        <div class="temp-containe"> 
+            <label for="kelvin">Kelvin :</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="kelvin"
+            placeholder="Enter value"
+            class="input"
+            id="kelvin">
+        </div>
+    </div>
+</body>
+</html>
