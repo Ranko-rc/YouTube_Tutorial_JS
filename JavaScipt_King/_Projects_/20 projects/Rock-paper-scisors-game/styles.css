@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    gap: 10px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+button{
+    margin: 5px;
+    padding: 20px 30px;
+    margin: 5px 10px;
+    font-size: 36px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    scale: 1.1;
+}
+
+#rock{
+    background-color: #b94242;
+}
+#paper{
+    background-color: #63b663;
+}
+#scissors{
+    background-color: #455ece;
+}
+
+#result{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#note-game{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+strong {
+
+    font-weight: bold;
+    color: rgb(143, 27, 104);
+}
+
+
+
+#scores{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 26px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#user_score{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 30px;
+}
+
+#computer_score{
+    color: red;
+    font-weight: bold;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
