@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {      
+    background: linear-gradient(to right bottom, #a3c3e2, #345e88);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(133, 218, 203, 0.199);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px rgba(17, 17, 17, 0.644);
+    text-align: center;
+    backdrop-filter: blur(10px); 
+}
+
+
+
+.input {
+    color: rgb(128, 6, 6);
+    background-color: rgba(233, 226, 217, 0.678);
+    width: 90%;
+    padding: 0.9rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    backdrop-filter: blur(10px); 
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* nadpisy a významy slov  (skryte pred zobrazením !!! ) */
+/***********************************/
+.info-text {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+/* skryte pred zobrazením významu slova */
+.meaning-container {
+    margin-top: 1rem;
+    display: none;     
+}
+.meaning-container p {
+    margin: 0.5rem 0;
+}
+.meaning-container audio {
+    margin-top: 1rem;
+}
+/***********************************/
+
+
+.title, .meaning {
+
+    font-size: 1.2rem;
+    color: #3bdd2c;
+}
+
+.title-text, .meaning-text {
+    font-weight: 300;
+    font-style: italic
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #74eb46;
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-text {
+    color: #d6ec0a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
+} 
+
+#audio  {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    border: solid 3px #bd1b10;
+    margin-top: 2rem;
+    width: 100%;
+    outline: none;
+}
+
+
