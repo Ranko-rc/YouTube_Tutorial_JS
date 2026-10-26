@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #9ad493, #277e2d);
+}
+
+h1 {
+    font-family: comic sans ms, cursive, sans-serif;
+    font-size: 1.5em;
+    color: rgb(26, 233, 233);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+#btn {
+    background-color: #e0dd27;
+    color: #d16b17;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(221, 9, 9, 0.4);
+}
+
+#btn:hover {
+    transform: translateY(-3px);
+    background-color: #3027b3;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.anime-name {
+    background-color: rgba(148, 145, 145, 0.164);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #e41b1b;
+    width: 150px    ;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(5px);
+}
+
+.anime-pic {
+    /* display: block; */
+    margin: 0 auto;
+    border: solid 2px #17217a;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    width: 200px;
+    height: 200px;
+}
+
+#loading-text,
+#error-text {
+    text-align: center;
+    margin-top: 10px;
+}   
+
+.anime-container {
+        /* display: none; */
+}
