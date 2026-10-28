@@ -5,10 +5,74 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: courier, monospace;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right bottom, #d65c0b, #c3d42a);   
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: rgba(92, 219, 6, 0.384);
+    border: none;
+    border-radius: 15px;
+    padding: 40px 40px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    filter: grayscale();
+}
+
+
+.btn:hover {
+    background: rgba(92, 219, 6, 0.6);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    filter: grayscale(0);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    transition: all 0.3s ease;
+    font-size: 55px;
+}
+
+.emoji-name {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkblue;
+    letter-spacing: 1px;
+}
+
