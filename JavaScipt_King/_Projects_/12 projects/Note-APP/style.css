@@ -12,13 +12,17 @@ body {
 
 .heading {
     text-align: center;
-    color: white;
+    font-size: 34px;
+    color: rgb(233, 84, 84);
     margin-top: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .paragraph {
     text-align: center;
-    color: white;
+    font-size: 10px;
+    color: rgb(192, 186, 186);
+    /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); */
     margin-top: 10px;
 }
 
@@ -34,15 +38,24 @@ body {
     background-color: #f9f9f924;
     color: #e6e0e0;
     width: 100%;
+    height: 200px;
     padding: 16px;
     border: none;
     border-radius: 15px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
     outline: none;
     font-size: 16px;
     resize: none;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
     border: outline: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.note:focus, .note:hover {
+    background-color: #e4b655;
+    color: #000;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
 }
 
 .note::placeholder {
@@ -53,19 +66,19 @@ body {
     display: block;
     width: 300px;
     height: 200px;
-    margin: 20px auto;
     padding: 10px 20px;
     background-color: #1532c7;
-    color: white;
+    color: rgb(177, 171, 171);
     border: none;
     border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 .btn:hover {
     background-color: #2575fc;
+    color: white;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
 }
