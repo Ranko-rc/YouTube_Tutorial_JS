@@ -26,4 +26,6 @@ const calculateBMI = () => {
     }
 }
 
+
+
 btnEl.addEventListener('click', calculateBMI);

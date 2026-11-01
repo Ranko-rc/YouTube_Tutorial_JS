@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);      
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.paragraph {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.app-area {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.note {
+    background-color: #f9f9f924;
+    color: #e6e0e0;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+    outline: none;
+    font-size: 16px;
+    resize: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    border: outline: none;
+}
+
+.note::placeholder {
+    color: #e6e0e0;
+}
+
+.btn {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #1532c7;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #2575fc;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+}
