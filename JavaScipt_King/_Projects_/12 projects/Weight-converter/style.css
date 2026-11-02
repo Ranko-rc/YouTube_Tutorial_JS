@@ -8,7 +8,68 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #cb1130, #dcfc25);      
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #5f8550;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}       
+
+.container {
+    background-color: #9a5ed32f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 400px;
+ 
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #368f4c;
+    font-size: 1.2em;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    font-size: 1.2em;
+}
+
+input[type="number"] {
+    background-color: #6d8a1e0e;
+    color: #1b53a7;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.result-value, .err-text {
+    color: #74be62;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 5px;    
+    text-align: center;
+}
+
+.err-text  {
+        color: #cb1130;
+    }
+
+
+.text-note  {
+    margin-top: 30px;
 }

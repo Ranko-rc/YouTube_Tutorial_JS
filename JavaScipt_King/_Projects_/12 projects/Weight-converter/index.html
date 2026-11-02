@@ -8,6 +8,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Weight Converter</h1>
+    <div class="container">
+        <h1 class="heading">Weight Converter</h1>
+        <div class="input-container">
+            <label for="input">Pounds:</label>
+            <input type="number" id="input" class="input" step="0.01" placeholder="Enter weight in pounds">
+        </div>
+            <div class="text-note">
+                <p class="result-value" id="result-value">Weight in Kg: <span>0</span></p>
+                <p class="err-text" id="err-text"></p>
+            </div>
+    </div>
 </body>
 </html>
