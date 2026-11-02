@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Currency Converter</h1>
+        <div class="currency-container">
+            <!-- 1) selector  -->
+             <div class="first-currency">
+                <select id="from-currency" class="currency-select">
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CZK">CZK</option>
+                    <option value="INR">INR</option>
+                </select>
+                <input 
+                type="number" 
+                id="worth-first" 
+                class="amount-input" 
+                placeholder="Enter amount"
+                min="0"
+                value="1">
+           </div>
+
+            <!--   selector -->
+            <div class="second-currency">
+                <select id="to-currency" class="currency-select">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CZK" selected>CZK</option>
+                    <option value="INR">INR</option>
+                </select>
+                <input 
+                type="number" 
+                id="worth-second" 
+                class="result-input" 
+                placeholder="Converted amount" 
+                min="0"
+                value="1"
+                disabled>
+            </div>
+        </div>
+        <p class="exchange-rate" id="exchange-rate"> 1 USD = 20 CZK</p>
+    </div>
+</body>
+</html>

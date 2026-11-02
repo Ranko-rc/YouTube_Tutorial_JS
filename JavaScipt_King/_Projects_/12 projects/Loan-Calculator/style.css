@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4ecaba, #114c7c);      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    font-family: cursive, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #06a8a0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: linear-gradient(to right, #c49f3b, #274417);  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 500px;
+}
+
+.container input {
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #cbb5dd;
+    ;
+}
+
+p {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container .amount, .container .interest-rate, .container .months-to-pay {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.result {
+    font-size: 1.5em;
+    color: #4ecaba;
+    text-align: center;
+    margin-top: 4%;
+}
