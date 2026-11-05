@@ -1,0 +1,58 @@
+JavaScript King
+HTML CSS JavaScript projekty pre začiatočníkov - 12 JavaScript projektov so zdrojovým kódom 
+source code: https://github.com/sahandghavidel/HTM...
+
+url_link:
+https://www.youtube.com/watch?v=-7JSF_aATJg&list=PLzbJ3MPhHqX4-hDdhCrIGYRqG1yLYj_Mq&index=4
+
+
+Časové značky
+00:00 - Intro
+1:31 - Dad Jokes Generator (Preview)
+2:55 - Dad Jokes Generator (HTML)
+14:52 - Dad Jokes Generator (CSS)
+34:24 - Dad Jokes Generator (JavaScript)
+1:05:33 - Feedback UI (Preview)
+1:07:39 - Feedback UI (HTML)
+1:23:50 - Feedback UI (CSS)
+1:46:53 - Feedback UI (JavaScript)
+2:11:26 - English Dictionary (Preview)
+2:13:10 - English Dictionary (HTML)
+2:27:58 - English Dictionary (CSS)
+2:40:54 - English Dictionary (JavaScript)
+3:21:02 - Random Quote Generator (Preview)
+3:22:17 - Random Quote Generator (HTML)
+3:38:46 - Random Quote Generator (CSS)
+3:57:47 - Random Quote Generator (JavaScript)
+4:22:57 - Anime Pics Generator (Preview)
+4:24:16 - Anime Pics Generator (HTML)
+4:37:52 - Anime Pics Generator (CSS)
+4:57:15 - Anime Pics Generator (JavaScript)
+5:25:38 - Random Emoji (Preview)
+5:26:56 - Random Emoji (HTML)
+5:35:20 - Random Emoji (CSS)
+5:49:40 - Random Emoji (JavaScript)
+6:17:04 - Temperature Converter (Preview)
+6:18:41 - Temperature Converter (CSS)
+6:34:20 - Temperature Converter (HTML)
+6:47:58 - Temperature Converter (JavaScript)
+7:08:36 - BMI Calculator (Preview)
+7:10:47 - BMI Calculator (HTML)
+7:25:51 - BMI Calculator (CSS)
+7:41:21 - BMI Calculator (JavaScript)
+8:00:08 - Note App (Preview)
+8:01:58 - Note App (HTML)
+8:12:14 - Note App (CSS)
+8:33:19 - Note App (JavaScript)
+9:19:55 - Currency Converter (Preview)
+9:21:45 - Currency Converter  (HTML)
+9:38:04 - Currency Converter  (CSS)
+9:52:33 - Currency Converter (JavaScript)
+10:21:56 - Loan Calculator (Preview)
+10:23:39 - Loan Calculator (HTML)
+10:38:00 - Loan Calculator (CSS)
+10:47:46 - Loan Calculator (JavaScript)
+11:03:18 - Weight Converter (Preview)
+11:04:57 - Weight Converter (HTML)
+11:18:41 - Weight Converter (CSS)
+11:35:57 - Weight Converter (JavaScript)
